@@ -76,8 +76,8 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
-MuxA:inst17
 MuxA:MuxMA
+MuxA:inst17
 }
 # macro_sequence
 
@@ -295,10 +295,10 @@ bypassff.inc
 }
 # hierarchies {
 ALU:inst3|Mux_2to1:inst5|lpm_mux:LPM_MUX_component
-MuxA:inst17|lpm_mux:LPM_MUX_component
 MuxA:MuxMA|lpm_mux:LPM_MUX_component
 InstructionAddressGenerator:inst12|MuxPC:inst3|lpm_mux:lpm_mux_component
 InstructionAddressGenerator:inst12|MuxINC:inst|lpm_mux:lpm_mux_component
+MuxA:inst17|lpm_mux:LPM_MUX_component
 MuxPC:inst16|lpm_mux:lpm_mux_component
 }
 # macro_sequence
@@ -465,10 +465,10 @@ data0
 }
 # hierarchies {
 ALU:inst3|Mux_2to1:inst5|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated
-MuxA:inst17|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated
 MuxA:MuxMA|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated
 InstructionAddressGenerator:inst12|MuxPC:inst3|lpm_mux:lpm_mux_component|mux_m4e:auto_generated
 InstructionAddressGenerator:inst12|MuxINC:inst|lpm_mux:lpm_mux_component|mux_m4e:auto_generated
+MuxA:inst17|lpm_mux:LPM_MUX_component|mux_m4e:auto_generated
 MuxPC:inst16|lpm_mux:lpm_mux_component|mux_m4e:auto_generated
 }
 # macro_sequence
@@ -3279,6 +3279,8 @@ lpm_constant.inc
 97ffb7e3fef9ce9fce4eff8455d5da5
 }
 # hierarchies {
+DFF_16BIT:RegZ|lpm_ff:lpm_ff_component
+InstructionAddressGenerator:inst12|PC:inst2|lpm_ff:lpm_ff_component
 DFF_16BIT:RegA|lpm_ff:lpm_ff_component
 lab8:inst5|DFF_16BIT:inst|lpm_ff:lpm_ff_component
 lab8:inst5|DFF_16BIT:inst10|lpm_ff:lpm_ff_component
@@ -3297,8 +3299,6 @@ lab8:inst5|DFF_16BIT:inst7|lpm_ff:lpm_ff_component
 lab8:inst5|DFF_16BIT:inst8|lpm_ff:lpm_ff_component
 lab8:inst5|DFF_16BIT:inst9|lpm_ff:lpm_ff_component
 DFF_16BIT:RY|lpm_ff:lpm_ff_component
-DFF_16BIT:RegZ|lpm_ff:lpm_ff_component
-InstructionAddressGenerator:inst12|PC:inst2|lpm_ff:lpm_ff_component
 DFF_16BIT:RM|lpm_ff:lpm_ff_component
 DFF_16BIT:RB|lpm_ff:lpm_ff_component
 }
@@ -4054,6 +4054,7 @@ AUTO_ROM_RECOGNITION
 ON
 }
 # hierarchies {
+DFF_16BIT:RegZ
 DFF_16BIT:RegA
 lab8:inst5|DFF_16BIT:inst
 lab8:inst5|DFF_16BIT:inst10
@@ -4072,7 +4073,6 @@ lab8:inst5|DFF_16BIT:inst7
 lab8:inst5|DFF_16BIT:inst8
 lab8:inst5|DFF_16BIT:inst9
 DFF_16BIT:RY
-DFF_16BIT:RegZ
 DFF_16BIT:RM
 DFF_16BIT:RB
 }
@@ -8079,7 +8079,7 @@ db|Datapath.(0).cnf
 # case_insensitive
 # source_file
 datapath.bdf
-a9c46aa32326ce398a2492d76375c5a1
+af2126b2dde1ac96bd545eab3fd922c9
 26
 # internal_option {
 BLOCK_DESIGN_NAMING

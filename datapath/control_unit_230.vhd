@@ -119,7 +119,16 @@ begin
 			
 			-- D-type instructions
 			elsif(op_code(1 downto 0) = "10") then
-				-- none implemented
+				--Load word
+				if(op_code)(3 downto 2) = "") then
+				
+				--Store word
+				elsif(op_code(3 downto 2) = "") then
+				
+				--Add immediate
+				elsif(op_code(3 downto 2) = "") then
+				
+				end if;
 				
 				
 			-- B-type instructions

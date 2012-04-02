@@ -73,17 +73,17 @@ VCCIO3                       : A2        : power  :                   : 3.3V    
 GND*                         : A3        :        :                   :         : 3         :                
 GND*                         : A4        :        :                   :         : 3         :                
 GND*                         : A5        :        :                   :         : 3         :                
-alu_b[11]                    : A6        : output : 3.3-V LVTTL       :         : 3         : N              
-alu_b[14]                    : A7        : output : 3.3-V LVTTL       :         : 3         : N              
-RA[7]                        : A8        : output : 3.3-V LVTTL       :         : 3         : N              
+alu_b[12]                    : A6        : output : 3.3-V LVTTL       :         : 3         : N              
+RA[3]                        : A7        : output : 3.3-V LVTTL       :         : 3         : N              
+IR_Test[22]                  : A8        : input  : 3.3-V LVTTL       :         : 3         : N              
 RA[15]                       : A9        : output : 3.3-V LVTTL       :         : 3         : N              
-instruction[4]               : A10       : output : 3.3-V LVTTL       :         : 3         : N              
-test_destination[1]          : A11       : input  : 3.3-V LVTTL       :         : 3         : N              
+stage_five[0]                : A10       : output : 3.3-V LVTTL       :         : 3         : N              
+alu_b[4]                     : A11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : A12       :        :                   :         : 4         :                
-instruction[21]              : A13       : output : 3.3-V LVTTL       :         : 4         : N              
-instruction[0]               : A14       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : A15       :        :                   :         : 4         :                
-IR_Test[3]                   : A16       : input  : 3.3-V LVTTL       :         : 4         : N              
+stage_five[10]               : A13       : output : 3.3-V LVTTL       :         : 4         : N              
+stage_five[8]                : A14       : output : 3.3-V LVTTL       :         : 4         : N              
+RA[5]                        : A15       : output : 3.3-V LVTTL       :         : 4         : N              
+IR_Test[8]                   : A16       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : A17       :        :                   :         : 4         :                
 GND*                         : A18       :        :                   :         : 4         :                
 GND*                         : A19       :        :                   :         : 4         :                
@@ -92,18 +92,18 @@ VCCIO4                       : A21       : power  :                   : 3.3V    
 GND                          : A22       : gnd    :                   :         :           :                
 VCCIO1                       : AA1       : power  :                   : 3.3V    : 1         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-IR_Test[5]                   : AA3       : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AA3       :        :                   :         : 8         :                
 GND*                         : AA4       :        :                   :         : 8         :                
 GND*                         : AA5       :        :                   :         : 8         :                
-stage_five[9]                : AA6       : output : 3.3-V LVTTL       :         : 8         : N              
-RA[6]                        : AA7       : output : 3.3-V LVTTL       :         : 8         : N              
-RZ[10]                       : AA8       : output : 3.3-V LVTTL       :         : 8         : N              
-test_data[12]                : AA9       : input  : 3.3-V LVTTL       :         : 8         : N              
-test_data[8]                 : AA10      : input  : 3.3-V LVTTL       :         : 8         : N              
-RZ[1]                        : AA11      : output : 3.3-V LVTTL       :         : 8         : N              
-stage_five[1]                : AA12      : output : 3.3-V LVTTL       :         : 7         : N              
-stage_five[5]                : AA13      : output : 3.3-V LVTTL       :         : 7         : N              
-test_data[15]                : AA14      : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AA6       :        :                   :         : 8         :                
+destination_select           : AA7       : input  : 3.3-V LVTTL       :         : 8         : N              
+test_data[2]                 : AA8       : input  : 3.3-V LVTTL       :         : 8         : N              
+RZ[4]                        : AA9       : output : 3.3-V LVTTL       :         : 8         : N              
+alu_b[6]                     : AA10      : output : 3.3-V LVTTL       :         : 8         : N              
+test_data[0]                 : AA11      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AA12      :        :                   :         : 7         :                
+GND*                         : AA13      :        :                   :         : 7         :                
+GND*                         : AA14      :        :                   :         : 7         :                
 GND*                         : AA15      :        :                   :         : 7         :                
 GND*                         : AA16      :        :                   :         : 7         :                
 GND*                         : AA17      :        :                   :         : 7         :                
@@ -117,16 +117,16 @@ VCCIO8                       : AB2       : power  :                   : 3.3V    
 GND*                         : AB3       :        :                   :         : 8         :                
 GND*                         : AB4       :        :                   :         : 8         :                
 GND*                         : AB5       :        :                   :         : 8         :                
-RA[10]                       : AB6       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_b[10]                    : AB7       : output : 3.3-V LVTTL       :         : 8         : N              
-instruction[7]               : AB8       : output : 3.3-V LVTTL       :         : 8         : N              
-data_d[6]                    : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
-stage_five[3]                : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
-test_data[11]                : AB11      : input  : 3.3-V LVTTL       :         : 8         : N              
-RA[3]                        : AB12      : output : 3.3-V LVTTL       :         : 7         : N              
-IR_Test[23]                  : AB13      : input  : 3.3-V LVTTL       :         : 7         : N              
-test_data[14]                : AB14      : input  : 3.3-V LVTTL       :         : 7         : N              
-RZ[9]                        : AB15      : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : AB6       :        :                   :         : 8         :                
+test_data[10]                : AB7       : input  : 3.3-V LVTTL       :         : 8         : N              
+IR_Test[7]                   : AB8       : input  : 3.3-V LVTTL       :         : 8         : N              
+RZ[6]                        : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
+RZ[9]                        : AB10      : output : 3.3-V LVTTL       :         : 8         : N              
+test_data[9]                 : AB11      : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : AB12      :        :                   :         : 7         :                
+GND*                         : AB13      :        :                   :         : 7         :                
+GND*                         : AB14      :        :                   :         : 7         :                
+GND*                         : AB15      :        :                   :         : 7         :                
 GND*                         : AB16      :        :                   :         : 7         :                
 GND*                         : AB17      :        :                   :         : 7         :                
 GND*                         : AB18      :        :                   :         : 7         :                
@@ -136,21 +136,21 @@ VCCIO7                       : AB21      : power  :                   : 3.3V    
 GND                          : AB22      : gnd    :                   :         :           :                
 VCCIO2                       : B1        : power  :                   : 3.3V    : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
-GND*                         : B3        :        :                   :         : 3         :                
+IR_Test[6]                   : B3        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : B4        :        :                   :         : 3         :                
-GND*                         : B5        :        :                   :         : 3         :                
+test_data[3]                 : B5        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND*                         : B6        :        :                   :         : 3         :                
-RZ[8]                        : B7        : output : 3.3-V LVTTL       :         : 3         : N              
-instruction[10]              : B8        : output : 3.3-V LVTTL       :         : 3         : N              
-stage_five[6]                : B9        : output : 3.3-V LVTTL       :         : 3         : N              
-alu_b[0]                     : B10       : output : 3.3-V LVTTL       :         : 3         : N              
-instruction[2]               : B11       : output : 3.3-V LVTTL       :         : 3         : N              
+alu_b[11]                    : B7        : output : 3.3-V LVTTL       :         : 3         : N              
+test_data[11]                : B8        : input  : 3.3-V LVTTL       :         : 3         : N              
+alu_b[10]                    : B9        : output : 3.3-V LVTTL       :         : 3         : N              
+IR_Test[12]                  : B10       : input  : 3.3-V LVTTL       :         : 3         : N              
+RA[8]                        : B11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : B12       :        :                   :         : 4         :                
-IR_Test[21]                  : B13       : input  : 3.3-V LVTTL       :         : 4         : N              
-instruction[23]              : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-RZ[2]                        : B15       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : B16       :        :                   :         : 4         :                
-GND*                         : B17       :        :                   :         : 4         :                
+RA[0]                        : B13       : output : 3.3-V LVTTL       :         : 4         : N              
+RZ[13]                       : B14       : output : 3.3-V LVTTL       :         : 4         : N              
+stage_five[13]               : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+test_data[8]                 : B16       : input  : 3.3-V LVTTL       :         : 4         : N              
+RA[6]                        : B17       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : B18       :        :                   :         : 4         :                
 GND*                         : B19       :        :                   :         : 4         :                
 GND*                         : B20       :        :                   :         : 4         :                
@@ -162,13 +162,13 @@ GND*                         : C2        :        :                   :         
 ~ASDO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C4        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : C5        : gnd    :                   :         :           :                
 VCCIO3                       : C6        : power  :                   : 3.3V    : 3         :                
-RA[8]                        : C7        : output : 3.3-V LVTTL       :         : 3         : N              
+RA[11]                       : C7        : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : C8        : gnd    :                   :         :           :                
-stage_five[11]               : C9        : output : 3.3-V LVTTL       :         : 3         : N              
-data_d[14]                   : C10       : output : 3.3-V LVTTL       :         : 3         : N              
+N                            : C9        : output : 3.3-V LVTTL       :         : 3         : N              
+stage_five[6]                : C10       : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
-IR_Test[20]                  : C13       : input  : 3.3-V LVTTL       :         : 4         : N              
+RZ[0]                        : C13       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : C14       :        :                   :         : 4         :                
 GND                          : C15       : gnd    :                   :         :           :                
 GND*                         : C16       :        :                   :         : 4         :                
@@ -178,20 +178,20 @@ GND*                         : C19       :        :                   :         
 GND*                         : C20       :        :                   :         : 5         :                
 GND*                         : C21       :        :                   :         : 5         :                
 GND*                         : C22       :        :                   :         : 5         :                
-GND*                         : D1        :        :                   :         : 2         :                
-GND*                         : D2        :        :                   :         : 2         :                
+RZ[14]                       : D1        : output : 3.3-V LVTTL       :         : 2         : N              
+RZ[15]                       : D2        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : D3        :        :                   :         : 2         :                
 GND*                         : D4        :        :                   :         : 2         :                
 GND*                         : D5        :        :                   :         : 2         :                
 GND*                         : D6        :        :                   :         : 2         :                
-destination_select           : D7        : input  : 3.3-V LVTTL       :         : 3         : N              
-instruction[16]              : D8        : output : 3.3-V LVTTL       :         : 3         : N              
-RZ[13]                       : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+IR_Test[16]                  : D7        : input  : 3.3-V LVTTL       :         : 3         : N              
+alu_b[13]                    : D8        : output : 3.3-V LVTTL       :         : 3         : N              
+RZ[1]                        : D9        : output : 3.3-V LVTTL       :         : 3         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-stage_five[0]                : D11       : output : 3.3-V LVTTL       :         : 3         : N              
+RA[4]                        : D11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D12       :        :                   :         : 3         :                
 GND                          : D13       : gnd    :                   :         :           :                
-GND*                         : D14       :        :                   :         : 4         :                
+alu_b[8]                     : D14       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : D15       :        :                   :         : 4         :                
 GND*                         : D16       :        :                   :         : 4         :                
 VCCIO4                       : D17       : power  :                   : 3.3V    : 4         :                
@@ -200,17 +200,17 @@ GND*                         : D19       :        :                   :         
 GND*                         : D20       :        :                   :         : 5         :                
 GND*                         : D21       :        :                   :         : 5         :                
 GND*                         : D22       :        :                   :         : 5         :                
-alu_b[1]                     : E1        : output : 3.3-V LVTTL       :         : 2         : N              
-RA[14]                       : E2        : output : 3.3-V LVTTL       :         : 2         : N              
+RA[12]                       : E1        : output : 3.3-V LVTTL       :         : 2         : N              
+IR_Test[14]                  : E2        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : E3        :        :                   :         : 2         :                
 GND*                         : E4        :        :                   :         : 2         :                
 VCCD_PLL3                    : E5        : power  :                   : 1.2V    :           :                
 VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
-stage_five[8]                : E7        : output : 3.3-V LVTTL       :         : 3         : N              
-RZ[4]                        : E8        : output : 3.3-V LVTTL       :         : 3         : N              
-data_d[8]                    : E9        : output : 3.3-V LVTTL       :         : 3         : N              
+RZ[3]                        : E7        : output : 3.3-V LVTTL       :         : 3         : N              
+IR_Test[1]                   : E8        : input  : 3.3-V LVTTL       :         : 3         : N              
+alu_b[3]                     : E9        : output : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
-RA[1]                        : E11       : output : 3.3-V LVTTL       :         : 3         : N              
+stage_five[4]                : E11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : E12       :        :                   :         : 3         :                
 VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
 GND*                         : E14       :        :                   :         : 4         :                
@@ -222,76 +222,76 @@ GND*                         : E19       :        :                   :         
 GND*                         : E20       :        :                   :         : 5         :                
 GND*                         : E21       :        :                   :         : 5         :                
 GND*                         : E22       :        :                   :         : 5         :                
-instruction[3]               : F1        : output : 3.3-V LVTTL       :         : 2         : N              
-RZ[6]                        : F2        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : F3        :        :                   :         : 2         :                
+RZ[10]                       : F1        : output : 3.3-V LVTTL       :         : 2         : N              
+stage_five[11]               : F2        : output : 3.3-V LVTTL       :         : 2         : N              
+alu_b[14]                    : F3        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : F4        :        :                   :         : 2         :                
 GND_PLL3                     : F5        : gnd    :                   :         :           :                
 GND_PLL3                     : F6        : gnd    :                   :         :           :                
 GNDA_PLL3                    : F7        : gnd    :                   :         :           :                
-test_data[13]                : F8        : input  : 3.3-V LVTTL       :         : 3         : N              
-RZ[5]                        : F9        : output : 3.3-V LVTTL       :         : 3         : N              
-instruction[12]              : F10       : output : 3.3-V LVTTL       :         : 3         : N              
-instruction[13]              : F11       : output : 3.3-V LVTTL       :         : 3         : N              
-instruction[22]              : F12       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : F13       :        :                   :         : 4         :                
-GND*                         : F14       :        :                   :         : 4         :                
+test_reg_select[1]           : F8        : input  : 3.3-V LVTTL       :         : 3         : N              
+IR_Test[2]                   : F9        : input  : 3.3-V LVTTL       :         : 3         : N              
+RZ[2]                        : F10       : output : 3.3-V LVTTL       :         : 3         : N              
+RA[10]                       : F11       : output : 3.3-V LVTTL       :         : 3         : N              
+stage_five[12]               : F12       : output : 3.3-V LVTTL       :         : 4         : N              
+alu_b[0]                     : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+Z                            : F14       : output : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : F15       :        :                   :         : 4         :                
 VCCA_PLL2                    : F16       : power  :                   : 1.2V    :           :                
 VCCD_PLL2                    : F17       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : F18       : gnd    :                   :         :           :                
 GND                          : F19       : gnd    :                   :         :           :                
 GND*                         : F20       :        :                   :         : 5         :                
-GND*                         : F21       :        :                   :         : 5         :                
+RA[2]                        : F21       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : F22       :        :                   :         : 5         :                
 NC                           : G1        :        :                   :         :           :                
 NC                           : G2        :        :                   :         :           :                
-GND*                         : G3        :        :                   :         : 2         :                
+RZ[12]                       : G3        : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : G4        : gnd    :                   :         :           :                
-GND*                         : G5        :        :                   :         : 2         :                
+stage_five[15]               : G5        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : G6        :        :                   :         : 2         :                
-alu_b[12]                    : G7        : output : 3.3-V LVTTL       :         : 3         : N              
-RZ[15]                       : G8        : output : 3.3-V LVTTL       :         : 3         : N              
+RZ[11]                       : G7        : output : 3.3-V LVTTL       :         : 3         : N              
+test_destination[3]          : G8        : input  : 3.3-V LVTTL       :         : 3         : N              
 VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
 GND                          : G10       : gnd    :                   :         :           :                
-IR_Test[15]                  : G11       : input  : 3.3-V LVTTL       :         : 3         : N              
-instruction[1]               : G12       : output : 3.3-V LVTTL       :         : 4         : N              
+test_data[12]                : G11       : input  : 3.3-V LVTTL       :         : 3         : N              
+alu_b[9]                     : G12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
 GND*                         : G15       :        :                   :         : 4         :                
 GND*                         : G16       :        :                   :         : 4         :                
 GND*                         : G17       :        :                   :         : 5         :                
-GND*                         : G18       :        :                   :         : 5         :                
+V                            : G18       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : G19       : power  :                   : 3.3V    : 5         :                
 GND*                         : G20       :        :                   :         : 5         :                
-GND*                         : G21       :        :                   :         : 5         :                
-GND*                         : G22       :        :                   :         : 5         :                
-IR_Test[10]                  : H1        : input  : 3.3-V LVTTL       :         : 2         : N              
-RZ[3]                        : H2        : output : 3.3-V LVTTL       :         : 2         : N              
-test_destination[3]          : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
-alu_b[8]                     : H4        : output : 3.3-V LVTTL       :         : 2         : N              
-alu_b[13]                    : H5        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : H6        :        :                   :         : 2         :                
-IR_Test[7]                   : H7        : input  : 3.3-V LVTTL       :         : 3         : N              
-stage_five[15]               : H8        : output : 3.3-V LVTTL       :         : 3         : N              
-test_data[6]                 : H9        : input  : 3.3-V LVTTL       :         : 3         : N              
-RA[11]                       : H10       : output : 3.3-V LVTTL       :         : 3         : N              
-test_data[7]                 : H11       : input  : 3.3-V LVTTL       :         : 3         : N              
-IR_Test[4]                   : H12       : input  : 3.3-V LVTTL       :         : 4         : N              
+RA[7]                        : G21       : output : 3.3-V LVTTL       :         : 5         : N              
+alu_b[5]                     : G22       : output : 3.3-V LVTTL       :         : 5         : N              
+alu_b[7]                     : H1        : output : 3.3-V LVTTL       :         : 2         : N              
+stage_five[2]                : H2        : output : 3.3-V LVTTL       :         : 2         : N              
+test_data[5]                 : H3        : input  : 3.3-V LVTTL       :         : 2         : N              
+test_data[6]                 : H4        : input  : 3.3-V LVTTL       :         : 2         : N              
+RA[13]                       : H5        : output : 3.3-V LVTTL       :         : 2         : N              
+RA[1]                        : H6        : output : 3.3-V LVTTL       :         : 2         : N              
+stage_five[1]                : H7        : output : 3.3-V LVTTL       :         : 3         : N              
+rf_select                    : H8        : input  : 3.3-V LVTTL       :         : 3         : N              
+IR_Test[21]                  : H9        : input  : 3.3-V LVTTL       :         : 3         : N              
+data_source                  : H10       : input  : 3.3-V LVTTL       :         : 3         : N              
+alu_b[2]                     : H11       : output : 3.3-V LVTTL       :         : 3         : N              
+test_data[15]                : H12       : input  : 3.3-V LVTTL       :         : 4         : N              
 GND*                         : H13       :        :                   :         : 4         :                
 GND*                         : H14       :        :                   :         : 4         :                
 GND*                         : H15       :        :                   :         : 4         :                
-GND*                         : H16       :        :                   :         : 5         :                
-GND*                         : H17       :        :                   :         : 5         :                
-GND*                         : H18       :        :                   :         : 5         :                
-IR_Test[8]                   : H19       : input  : 3.3-V LVTTL       :         : 5         : N              
+IR_Test[11]                  : H16       : input  : 3.3-V LVTTL       :         : 5         : N              
+RZ[7]                        : H17       : output : 3.3-V LVTTL       :         : 5         : N              
+RZ[5]                        : H18       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : H19       :        :                   :         : 5         :                
 GND                          : H20       : gnd    :                   :         :           :                
 NC                           : H21       :        :                   :         :           :                
 NC                           : H22       :        :                   :         :           :                
-RA[5]                        : J1        : output : 3.3-V LVTTL       :         : 2         : N              
-RA[2]                        : J2        : output : 3.3-V LVTTL       :         : 2         : N              
+test_data[1]                 : J1        : input  : 3.3-V LVTTL       :         : 2         : N              
+RA[9]                        : J2        : output : 3.3-V LVTTL       :         : 2         : N              
 NC                           : J3        :        :                   :         :           :                
-alu_b[4]                     : J4        : output : 3.3-V LVTTL       :         : 2         : N              
+test_data[4]                 : J4        : input  : 3.3-V LVTTL       :         : 2         : N              
 NC                           : J5        :        :                   :         :           :                
 NC                           : J6        :        :                   :         :           :                
 VCCIO2                       : J7        : power  :                   : 3.3V    : 2         :                
@@ -304,12 +304,12 @@ VCCINT                       : J13       : power  :                   : 1.2V    
 GND*                         : J14       :        :                   :         : 4         :                
 GND*                         : J15       :        :                   :         : 5         :                
 VCCIO5                       : J16       : power  :                   : 3.3V    : 5         :                
-GND*                         : J17       :        :                   :         : 5         :                
-reset                        : J18       : input  : 3.3-V LVTTL       :         : 5         : N              
-RZ[0]                        : J19       : output : 3.3-V LVTTL       :         : 5         : N              
-alu_b[15]                    : J20       : output : 3.3-V LVTTL       :         : 5         : N              
-RA[12]                       : J21       : output : 3.3-V LVTTL       :         : 5         : N              
-rf                           : J22       : output : 3.3-V LVTTL       :         : 5         : N              
+test_data[14]                : J17       : input  : 3.3-V LVTTL       :         : 5         : N              
+stage_five[9]                : J18       : output : 3.3-V LVTTL       :         : 5         : N              
+IR_Test[20]                  : J19       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : J20       :        :                   :         : 5         :                
+GND*                         : J21       :        :                   :         : 5         :                
+GND*                         : J22       :        :                   :         : 5         :                
 nCE                          : K1        :        :                   :         : 2         :                
 TCK                          : K2        : input  :                   :         : 2         :                
 GND                          : K3        : gnd    :                   :         :           :                
@@ -329,9 +329,9 @@ GND                          : K16       : gnd    :                   :         
 NC                           : K17       :        :                   :         :           :                
 NC                           : K18       :        :                   :         :           :                
 GND                          : K19       : gnd    :                   :         :           :                
-GND*                         : K20       :        :                   :         : 5         :                
-test_data[0]                 : K21       : input  : 3.3-V LVTTL       :         : 5         : N              
-IR_Test[17]                  : K22       : input  : 3.3-V LVTTL       :         : 5         : N              
+RZ[8]                        : K20       : output : 3.3-V LVTTL       :         : 5         : N              
+test_destination[0]          : K21       : input  : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : K22       :        :                   :         : 5         :                
 GND+                         : L1        :        :                   :         : 2         :                
 GND+                         : L2        :        :                   :         : 2         :                
 VCCIO2                       : L3        : power  :                   : 3.3V    : 2         :                
@@ -339,7 +339,7 @@ nCONFIG                      : L4        :        :                   :         
 TDO                          : L5        : output :                   :         : 2         :                
 DCLK                         : L6        :        :                   :         : 2         :                
 NC                           : L7        :        :                   :         :           :                
-test_reg_select[0]           : L8        : input  : 3.3-V LVTTL       :         : 2         : N              
+stage_five[3]                : L8        : output : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : L9        : power  :                   : 1.2V    :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -349,17 +349,17 @@ VCCINT                       : L14       : power  :                   : 1.2V    
 NC                           : L15       :        :                   :         :           :                
 NC                           : L16       :        :                   :         :           :                
 NC                           : L17       :        :                   :         :           :                
-instruction[17]              : L18       : output : 3.3-V LVTTL       :         : 5         : N              
-instruction[15]              : L19       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : L18       :        :                   :         : 5         :                
+IR_Test[3]                   : L19       : input  : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : L20       : power  :                   : 3.3V    : 5         :                
-rf_test                      : L21       : input  : 3.3-V LVTTL       :         : 5         : N              
-rf_select                    : L22       : input  : 3.3-V LVTTL       :         : 5         : N              
+IR_Test[15]                  : L21       : input  : 3.3-V LVTTL       :         : 5         : N              
+reset                        : L22       : input  : 3.3-V LVTTL       :         : 5         : N              
 clock                        : M1        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND+                         : M2        :        :                   :         : 1         :                
 VCCIO1                       : M3        : power  :                   : 3.3V    : 1         :                
 GND                          : M4        : gnd    :                   :         :           :                
-IR_Test[12]                  : M5        : input  : 3.3-V LVTTL       :         : 1         : N              
-IR_Test[6]                   : M6        : input  : 3.3-V LVTTL       :         : 1         : N              
+IR_Test[18]                  : M5        : input  : 3.3-V LVTTL       :         : 1         : N              
+rf_test                      : M6        : input  : 3.3-V LVTTL       :         : 1         : N              
 NC                           : M7        :        :                   :         :           :                
 NC                           : M8        :        :                   :         :           :                
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
@@ -371,17 +371,17 @@ VCCINT                       : M14       : power  :                   : 1.2V    
 NC                           : M15       :        :                   :         :           :                
 NC                           : M16       :        :                   :         :           :                
 MSEL0                        : M17       :        :                   :         : 6         :                
-RZ[14]                       : M18       : output : 3.3-V LVTTL       :         : 6         : N              
-RZ[12]                       : M19       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : M18       :        :                   :         : 6         :                
+GND*                         : M19       :        :                   :         : 6         :                
 VCCIO6                       : M20       : power  :                   : 3.3V    : 6         :                
 GND+                         : M21       :        :                   :         : 6         :                
 GND+                         : M22       :        :                   :         : 6         :                
-instruction[14]              : N1        : output : 3.3-V LVTTL       :         : 1         : N              
-IR_Test[13]                  : N2        : input  : 3.3-V LVTTL       :         : 1         : N              
-stage_five[13]               : N3        : output : 3.3-V LVTTL       :         : 1         : N              
-data_d[7]                    : N4        : output : 3.3-V LVTTL       :         : 1         : N              
+IR_Test[9]                   : N1        : input  : 3.3-V LVTTL       :         : 1         : N              
+IR_Test[19]                  : N2        : input  : 3.3-V LVTTL       :         : 1         : N              
+IR_Test[5]                   : N3        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : N4        :        :                   :         : 1         :                
 NC                           : N5        :        :                   :         :           :                
-data_source                  : N6        : input  : 3.3-V LVTTL       :         : 1         : N              
+test_reg_select[0]           : N6        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND                          : N7        : gnd    :                   :         :           :                
 NC                           : N8        :        :                   :         :           :                
 VCCINT                       : N9        : power  :                   : 1.2V    :           :                
@@ -390,70 +390,70 @@ GND                          : N11       : gnd    :                   :         
 GND                          : N12       : gnd    :                   :         :           :                
 GND                          : N13       : gnd    :                   :         :           :                
 VCCINT                       : N14       : power  :                   : 1.2V    :           :                
-IR_Test[11]                  : N15       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : N15       :        :                   :         : 6         :                
 GND                          : N16       : gnd    :                   :         :           :                
 MSEL1                        : N17       :        :                   :         : 6         :                
 CONF_DONE                    : N18       :        :                   :         : 6         :                
 GND                          : N19       : gnd    :                   :         :           :                
 nSTATUS                      : N20       :        :                   :         : 6         :                
-instruction[19]              : N21       : output : 3.3-V LVTTL       :         : 6         : N              
-test_destination[0]          : N22       : input  : 3.3-V LVTTL       :         : 6         : N              
-IR_Test[0]                   : P1        : input  : 3.3-V LVTTL       :         : 1         : N              
-data_d[12]                   : P2        : output : 3.3-V LVTTL       :         : 1         : N              
-data_d[10]                   : P3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : N21       :        :                   :         : 6         :                
+GND*                         : N22       :        :                   :         : 6         :                
+IR_Test[4]                   : P1        : input  : 3.3-V LVTTL       :         : 1         : N              
+test_destination[2]          : P2        : input  : 3.3-V LVTTL       :         : 1         : N              
+IR_Test[13]                  : P3        : input  : 3.3-V LVTTL       :         : 1         : N              
 NC                           : P4        :        :                   :         :           :                
-test_data[1]                 : P5        : input  : 3.3-V LVTTL       :         : 1         : N              
-stage_five[7]                : P6        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : P5        :        :                   :         : 1         :                
+GND*                         : P6        :        :                   :         : 1         :                
 VCCIO1                       : P7        : power  :                   : 3.3V    : 1         :                
-IR_Test[19]                  : P8        : input  : 3.3-V LVTTL       :         : 8         : N              
-test_destination[2]          : P9        : input  : 3.3-V LVTTL       :         : 8         : N              
+IR_Test[17]                  : P8        : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : P9        :        :                   :         : 8         :                
 VCCINT                       : P10       : power  :                   : 1.2V    :           :                
 VCCINT                       : P11       : power  :                   : 1.2V    :           :                
 VCCINT                       : P12       : power  :                   : 1.2V    :           :                
 VCCINT                       : P13       : power  :                   : 1.2V    :           :                
 NC                           : P14       :        :                   :         :           :                
-IR_Test[1]                   : P15       : input  : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : P15       :        :                   :         : 6         :                
 VCCIO6                       : P16       : power  :                   : 3.3V    : 6         :                
-stage_five[4]                : P17       : output : 3.3-V LVTTL       :         : 6         : N              
-alu_b[9]                     : P18       : output : 3.3-V LVTTL       :         : 6         : N              
+GND*                         : P17       :        :                   :         : 6         :                
+GND*                         : P18       :        :                   :         : 6         :                
 NC                           : P19       :        :                   :         :           :                
 NC                           : P20       :        :                   :         :           :                
 NC                           : P21       :        :                   :         :           :                
 NC                           : P22       :        :                   :         :           :                
-instruction[5]               : R1        : output : 3.3-V LVTTL       :         : 1         : N              
-data_d[2]                    : R2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R1        :        :                   :         : 1         :                
+GND*                         : R2        :        :                   :         : 1         :                
 GND                          : R3        : gnd    :                   :         :           :                
 NC                           : R4        :        :                   :         :           :                
-data_d[1]                    : R5        : output : 3.3-V LVTTL       :         : 1         : N              
-IR_Test[9]                   : R6        : input  : 3.3-V LVTTL       :         : 1         : N              
-test_data[9]                 : R7        : input  : 3.3-V LVTTL       :         : 1         : N              
-RA[9]                        : R8        : output : 3.3-V LVTTL       :         : 1         : N              
-instruction[9]               : R9        : output : 3.3-V LVTTL       :         : 8         : N              
-instruction[11]              : R10       : output : 3.3-V LVTTL       :         : 8         : N              
-data_d[4]                    : R11       : output : 3.3-V LVTTL       :         : 8         : N              
-alu_b[3]                     : R12       : output : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : R5        :        :                   :         : 1         :                
+GND*                         : R6        :        :                   :         : 1         :                
+GND*                         : R7        :        :                   :         : 1         :                
+GND*                         : R8        :        :                   :         : 1         :                
+alu_b[1]                     : R9        : output : 3.3-V LVTTL       :         : 8         : N              
+C                            : R10       : output : 3.3-V LVTTL       :         : 8         : N              
+stage_five[7]                : R11       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : R12       :        :                   :         : 7         :                
 GND*                         : R13       :        :                   :         : 7         :                
 GND*                         : R14       :        :                   :         : 7         :                
 GND*                         : R15       :        :                   :         : 7         :                
 GND*                         : R16       :        :                   :         : 7         :                
 GND*                         : R17       :        :                   :         : 6         :                
-test_data[5]                 : R18       : input  : 3.3-V LVTTL       :         : 6         : N              
-data_d[3]                    : R19       : output : 3.3-V LVTTL       :         : 6         : N              
-alu_b[2]                     : R20       : output : 3.3-V LVTTL       :         : 6         : N              
-RA[0]                        : R21       : output : 3.3-V LVTTL       :         : 6         : N              
-stage_five[14]               : R22       : output : 3.3-V LVTTL       :         : 6         : N              
-instruction[8]               : T1        : output : 3.3-V LVTTL       :         : 1         : N              
-test_reg_select[1]           : T2        : input  : 3.3-V LVTTL       :         : 1         : N              
-stage_five[10]               : T3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R18       :        :                   :         : 6         :                
+GND*                         : R19       :        :                   :         : 6         :                
+GND*                         : R20       :        :                   :         : 6         :                
+GND*                         : R21       :        :                   :         : 6         :                
+GND*                         : R22       :        :                   :         : 6         :                
+GND*                         : T1        :        :                   :         : 1         :                
+GND*                         : T2        :        :                   :         : 1         :                
+GND*                         : T3        :        :                   :         : 1         :                
 VCCIO1                       : T4        : power  :                   : 3.3V    : 1         :                
-data_d[5]                    : T5        : output : 3.3-V LVTTL       :         : 1         : N              
-instruction[18]              : T6        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T5        :        :                   :         : 1         :                
+GND*                         : T6        :        :                   :         : 1         :                
 GND*                         : T7        :        :                   :         : 8         :                
-IR_Test[18]                  : T8        : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : T8        :        :                   :         : 8         :                
 VCCIO8                       : T9        : power  :                   : 3.3V    : 8         :                
 GND                          : T10       : gnd    :                   :         :           :                
-data_d[0]                    : T11       : output : 3.3-V LVTTL       :         : 8         : N              
-instruction[20]              : T12       : output : 3.3-V LVTTL       :         : 7         : N              
+stage_five[5]                : T11       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : T12       :        :                   :         : 7         :                
 GND                          : T13       : gnd    :                   :         :           :                
 VCCIO7                       : T14       : power  :                   : 3.3V    : 7         :                
 GND*                         : T15       :        :                   :         : 7         :                
@@ -462,21 +462,21 @@ GND_PLL4                     : T17       : gnd    :                   :         
 GND*                         : T18       :        :                   :         : 6         :                
 VCCIO6                       : T19       : power  :                   : 3.3V    : 6         :                
 GND                          : T20       : gnd    :                   :         :           :                
-test_data[10]                : T21       : input  : 3.3-V LVTTL       :         : 6         : N              
-test_data[4]                 : T22       : input  : 3.3-V LVTTL       :         : 6         : N              
-alu_b[5]                     : U1        : output : 3.3-V LVTTL       :         : 1         : N              
-data_d[11]                   : U2        : output : 3.3-V LVTTL       :         : 1         : N              
-RZ[11]                       : U3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T21       :        :                   :         : 6         :                
+GND*                         : T22       :        :                   :         : 6         :                
+GND*                         : U1        :        :                   :         : 1         :                
+GND*                         : U2        :        :                   :         : 1         :                
+GND*                         : U3        :        :                   :         : 1         :                
 GND*                         : U4        :        :                   :         : 1         :                
 GND_PLL1                     : U5        : gnd    :                   :         :           :                
 VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
 VCCA_PLL1                    : U7        : power  :                   : 1.2V    :           :                
-RA[4]                        : U8        : output : 3.3-V LVTTL       :         : 8         : N              
-data_d[13]                   : U9        : output : 3.3-V LVTTL       :         : 8         : N              
-data_d[9]                    : U10       : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : U8        :        :                   :         : 8         :                
+alu_b[15]                    : U9        : output : 3.3-V LVTTL       :         : 8         : N              
+RA[14]                       : U10       : output : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : U11       :        :                   :         : 8         :                
 GND+                         : U12       :        :                   :         : 8         :                
-test_data[2]                 : U13       : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : U13       :        :                   :         : 7         :                
 GND*                         : U14       :        :                   :         : 7         :                
 GND*                         : U15       :        :                   :         : 7         :                
 VCCA_PLL4                    : U16       : power  :                   : 1.2V    :           :                
@@ -485,18 +485,18 @@ GND*                         : U18       :        :                   :         
 GND*                         : U19       :        :                   :         : 6         :                
 GND*                         : U20       :        :                   :         : 6         :                
 GND*                         : U21       :        :                   :         : 6         :                
-IR_Test[2]                   : U22       : input  : 3.3-V LVTTL       :         : 6         : N              
-stage_five[2]                : V1        : output : 3.3-V LVTTL       :         : 1         : N              
-alu_b[7]                     : V2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : U22       :        :                   :         : 6         :                
+GND*                         : V1        :        :                   :         : 1         :                
+GND*                         : V2        :        :                   :         : 1         :                
 GND                          : V3        : gnd    :                   :         :           :                
 GND*                         : V4        :        :                   :         : 1         :                
 GND_PLL1                     : V5        : gnd    :                   :         :           :                
 GND                          : V6        : gnd    :                   :         :           :                
 GNDA_PLL1                    : V7        : gnd    :                   :         :           :                
-RA[13]                       : V8        : output : 3.3-V LVTTL       :         : 8         : N              
-instruction[6]               : V9        : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : V8        :        :                   :         : 8         :                
+IR_Test[10]                  : V9        : input  : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : V10       : power  :                   : 3.3V    : 8         :                
-test_data[3]                 : V11       : input  : 3.3-V LVTTL       :         : 8         : N              
+test_data[13]                : V11       : input  : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : V12       :        :                   :         : 7         :                
 VCCIO7                       : V13       : power  :                   : 3.3V    : 7         :                
 GND*                         : V14       :        :                   :         : 7         :                
@@ -514,11 +514,11 @@ GND*                         : W3        :        :                   :         
 GND*                         : W4        :        :                   :         : 1         :                
 GND*                         : W5        :        :                   :         : 1         :                
 VCCIO8                       : W6        : power  :                   : 3.3V    : 8         :                
-IR_Test[14]                  : W7        : input  : 3.3-V LVTTL       :         : 8         : N              
-stage_five[12]               : W8        : output : 3.3-V LVTTL       :         : 8         : N              
-data_d[15]                   : W9        : output : 3.3-V LVTTL       :         : 8         : N              
+IR_Test[0]                   : W7        : input  : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : W8        :        :                   :         : 8         :                
+stage_five[14]               : W9        : output : 3.3-V LVTTL       :         : 8         : N              
 GND                          : W10       : gnd    :                   :         :           :                
-ir_enable                    : W11       : output : 3.3-V LVTTL       :         : 8         : N              
+test_data[7]                 : W11       : input  : 3.3-V LVTTL       :         : 8         : N              
 GND+                         : W12       :        :                   :         : 7         :                
 GND                          : W13       : gnd    :                   :         :           :                
 GND*                         : W14       :        :                   :         : 7         :                
@@ -536,13 +536,13 @@ GND*                         : Y3        :        :                   :         
 GND*                         : Y4        :        :                   :         : 1         :                
 GND*                         : Y5        :        :                   :         : 8         :                
 GND*                         : Y6        :        :                   :         : 8         :                
-alu_b[6]                     : Y7        : output : 3.3-V LVTTL       :         : 8         : N              
+GND*                         : Y7        :        :                   :         : 8         :                
 GND                          : Y8        : gnd    :                   :         :           :                
-RZ[7]                        : Y9        : output : 3.3-V LVTTL       :         : 8         : N              
-IR_Test[16]                  : Y10       : input  : 3.3-V LVTTL       :         : 8         : N              
+test_destination[1]          : Y9        : input  : 3.3-V LVTTL       :         : 8         : N              
+IR_Test[23]                  : Y10       : input  : 3.3-V LVTTL       :         : 8         : N              
 VCCIO8                       : Y11       : power  :                   : 3.3V    : 8         :                
 VCCIO7                       : Y12       : power  :                   : 3.3V    : 7         :                
-IR_Test[22]                  : Y13       : input  : 3.3-V LVTTL       :         : 7         : N              
+GND*                         : Y13       :        :                   :         : 7         :                
 GND*                         : Y14       :        :                   :         : 7         :                
 GND                          : Y15       : gnd    :                   :         :           :                
 GND*                         : Y16       :        :                   :         : 7         :                

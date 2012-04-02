@@ -22,7 +22,7 @@
 # -- Compiling entity datapath
 # -- Compiling architecture structure of datapath
 # 
-# do "C:/Users/Mitchell/Documents/School/CSE/230/datapath/datapath_test.do"
+# do "C:/Users/Mitchell/CSE230ProjRepo/datapath/datapath_test.do"
 # vsim datapath
 # vsim datapath 
 # Loading std.standard
@@ -62,17 +62,17 @@
 # add wave /alu_b
 # add wave /RZ
 # add wave /stage_five
-# add wave /instruction
-# add wave /ir_enable
-# add wave /data_d
-# add wave /rf
+# add wave /N
+# add wave /Z
+# add wave /C
+# add wave /V
 # force clock 0 0, 1 50 -repeat 100
 # force reset 1 0, 0 250
 # force test_destination 0001 0, 0010 100
 # force data_source 1 0, 0 250
 # force destination_select 1 0, 0 250
 # force test_data 0110010101101011 0, 0001110101101010 100
-# force IR_Test 001100000000100100011100 0, 001100000001100100001000 800
+# force IR_Test 001100000000100100011000 0, 001100000001100100001000 800
 # force rf_select 1 0, 0 250
 # force rf_test 1 0
 # force test_reg_select 10 0
